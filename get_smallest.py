@@ -9,7 +9,7 @@ def main():
     smallest = None
     while True:
         num = input("Enter a number: ").lower()
-        if num =="done":
+        if num == "done":
             break
         smallest = get_smallest(smallest, num)
         print("Smllest number is:", smallest)
