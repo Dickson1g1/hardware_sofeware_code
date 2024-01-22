@@ -8,7 +8,7 @@ def get_smallest(smallest, value):
 def main():
     smallest = None
     while True:
-        num = input("Enter a number: ").lower()
+        num = int(input("Enter a number: ").lower())    
         if num == "done":
             break
         smallest = get_smallest(smallest, num)
