@@ -9,7 +9,7 @@ def reverse_word(characters):
     reverse_string = ''
     for character in characters:
         reverse_string = character + reverse_string
-    return reverse_string 
+    return reverse_string
 
 def main():
     while True:
@@ -18,7 +18,7 @@ def main():
             break
         reversed_word = reverse_word(word)
         print('Below is your string in reverse:\n{}'.format(reversed_word))
-        print("Good job!!, Let's try another one.")
+        print("Good job!!, Let's try another one.") # it will break out of the loop and return to the intro msg. 
         print() # Add a blank print line for a space between
 
 if __name__ == "__main__":
