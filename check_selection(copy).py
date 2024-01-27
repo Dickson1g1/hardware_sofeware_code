@@ -7,7 +7,7 @@ def check_selection(numbers):
             continue  # continue to the next iteration if it's not a hexadecimal number
         else:
             print("Not a hexadecimal number")
-            return True
+            return True # return back so that the user can select another number. 
         return False
 
 def main():
@@ -15,7 +15,6 @@ def main():
     while good_selection:  # modified the loop condition
         selection = input("Provide a hexadecimal number: ")
         good_selection = check_selection(selection)
-
 
 if __name__ == "__main__":
     main()
