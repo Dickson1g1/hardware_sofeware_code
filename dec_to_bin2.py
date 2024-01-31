@@ -1,11 +1,14 @@
 def decimal_to_binary(number):
-    result = ""
-    number = int(number)
-    while number > 0:   # keep dividing until at 0
-        remainder = number % 2
-        number = number // 2
-        result = str(remainder) + result   # place string in reverse order
-    return result
+    try:
+        result = ""
+        number = int(number)
+        while number > 0:
+            remainder = number % 2
+            number = number // 2
+            result = str(remainder) + result
+        return result
+    except ValueError:
+        print("Invalid input! Please enter a valid decimal number.")
 
 def main():
     num = input("Enter Decimal Number:")
