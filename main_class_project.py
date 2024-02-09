@@ -20,6 +20,7 @@ def binary_to_decimal(binary):
 
 # Menu and program loop
 def main():       # i have to put a nice into msg after this
+    print("Hello!!, ")
     print("Welcome to the Decimal to Binary and Binary to Decimal Converter!")# Opening statement
     while True:
         print("\nPlease select an option:")
@@ -34,19 +35,19 @@ def main():       # i have to put a nice into msg after this
                 binary = decimal_to_binary(decimal)
                 print("Decimal {} to Binary: {}".format(decimal, binary))
             except ValueError:
-                print("Invalid input! Please enter a valid decimal number.")
+                print("Invalid input! Please enter a valid decimal number.") #return
         elif choice == '2':
             try:
                 binary = input("Enter a binary number: ")
                 decimal = binary_to_decimal(int(binary))
                 print("Binary {} to Decimal: {}".format(binary, decimal))
             except ValueError:
-                print("Invalid input! Please enter a valid binary number.")
+                print("Invalid input! Please enter a valid binary number.") # return
         elif choice == '3':
             print("Thank you for using the Decimal to Binary and Binary to Decimal Converter. Goodbye!")
-            break
+            break # out of the loop
         else:
-            print("Invalid choice. Please enter a valid option (1, 2, or 3).")
+            print("Invalid choice. Please enter a valid option (1, 2, or 3).") #a print statement to tell the user if they select a deffrent number 
 
 if __name__ == "__main__":
     main()
