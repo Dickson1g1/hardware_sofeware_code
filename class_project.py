@@ -22,23 +22,27 @@ def binary_to_decimal(binary):
     return decimal
 
 # Menu and program loop
-while True:
-    print("\nPlease select an option:")
-    print("1. Convert Decimal to Binary")
-    print("2. Convert Binary to Decimal")
-    print("3. Quit")
-    choice = input("Enter your choice (1, 2, or 3): ")
+def main():
+    while True:
+        print("\nPlease select an option:")
+        print("1. Convert Decimal to Binary")
+        print("2. Convert Binary to Decimal")
+        print("3. Quit")
+        choice = input("Enter your choice (1, 2, or 3): ")
 
-    if choice == '1':
-        decimal = int(input("Enter a decimal number: "))
-        binary = decimal_to_binary(decimal)
-        print("Decimal {} to Binary: {}".format(decimal, binary))
-    elif choice == '2':
-        binary = int(input("Enter a binary number: "))
-        decimal = binary_to_decimal(binary)
-        print("Binary {} to Decimal: {}".format(binary, decimal))
-    elif choice == '3':
-        print("Thank you for using the Decimal to Binary and Binary to Decimal Converter. Goodbye!")
-        break
-    else:
-        print("Invalid choice. Please enter a valid option (1, 2, or 3).")
+        if choice == '1':
+            decimal = int(input("Enter a decimal number: "))
+            binary = decimal_to_binary(decimal)
+            print("Decimal {} to Binary: {}".format(decimal, binary))
+        elif choice == '2':
+            binary = int(input("Enter a binary number: "))
+            decimal = binary_to_decimal(binary)
+            print("Binary {} to Decimal: {}".format(binary, decimal))
+        elif choice == '3':
+            print("Thank you for using the Decimal to Binary and Binary to Decimal Converter. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please enter a valid option (1, 2, or 3).")
+
+if __name__ == "__main__":
+    main()
