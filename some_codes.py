@@ -1,4 +1,5 @@
-#i have to cheack for bugs. 
+
+#thats in C or C++
 
 //  Author coding_knowladg
  k;double sin()
