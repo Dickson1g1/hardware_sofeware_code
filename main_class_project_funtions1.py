@@ -106,7 +106,7 @@ def main():
                 decimal = binary_to_decimal(int(binary))
                 print("Binary {} to Decimal: {}".format(binary, decimal))
             except ValueError:
-                print("Invalid input! Please enter a valid binary number.")
-
+                print("Invalid input! Please enter a valid binary number.") # i have to compelet my code.
+                #from here. 
 if __name__ == '__main__':
     main()
